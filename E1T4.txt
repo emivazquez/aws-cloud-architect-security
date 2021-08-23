@@ -1,0 +1,2 @@
+Poor practice 1: The web service instance should be in the private subnet 1, and only reachable through the application load balancer.
+Poor practice 2: The s3 bucket should have a VPC endpoint in the private subnet 1 and not be accessed by the web service isntance through internet.
