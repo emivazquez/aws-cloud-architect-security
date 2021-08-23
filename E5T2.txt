@@ -1,13 +1,19 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
+ * CloudSploit to scan CloudFormation templates
 
 ### Example vulnerability
+ <img src="https://raw.githubusercontent.com/aquasecurity/cloudsploit/master/docs/console.png">
 
 ##Scan AMI’s or containers for OS vulnerabilities
+ * To scan the container images you can use Anchore
 
 ### Example vulnerability
+ <img src="https://anchore.com/wp-content/uploads/2019/09/ui_vulndb_popup.png">
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+ * ScoutSuite is a very rich cloud scanner
 
 ### Example vulnerability
+ <img src="https://user-images.githubusercontent.com/13310971/77861662-342bf680-71e4-11ea-8eed-ccaeb78c5f45.gif">

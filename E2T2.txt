@@ -1,3 +1,9 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+* Ensure no security groups allow ingress from 0.0.0.0/0 to port 22:
+  The Web Application instance should not have the port 22 open to Internet, making the port available for scans and attacks.
+
+* Ensure the default security group of every VPC restricts all traffic:
+  The default group in the newly created VPC should not have any inbound rule, thus denying all access.
