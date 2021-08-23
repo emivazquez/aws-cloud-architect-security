@@ -5,7 +5,8 @@ Changes suggested to prevent SSH Brute Force Attack:
   * Delete security group rule enabling any machine on the Internet to reach port 22 in web app instance.
   * Change inbound rule in NACL to allow SSH connections just from instances in the VPC.
   * Move the instance to the private subnet.
+  * Disable Password Authentication in the SSH service of the Web App Instance.
 
 
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
-If the instance profile of the web app machine does not have access to the Secret Recipes S3 Bucket, even in the event of an instance compromise the data in the bucket is safe.
+In the aforementioned case, if the S3 secret recipes bucket were encrypted using CMK-KMS Keys, the attacker would not be able to read the data, thus avoiding the leak of sensitive data.
